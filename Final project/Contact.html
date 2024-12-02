@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/styles2.css">
+    <link rel="icon" href="Imagenes/logowithbackground.png" image = "/x-icon">
+</head>
+<body>
+    <header id="header1">
+        
+     
+
+    </header>
+    <div class="content-container">
+        <div class="text-content">
+            <h1 id="Introduction">Reach out to us!</h1>
+            <p>Do you require a service to a specific product or need support<br>
+            with the installment of your product?<br>
+            Come fill this form to contact us!</p>
+        </div>
+    
+        <div class="image-container">
+            <img src="Imagenes/callcenter.png" alt="call center">
+        </div>
+    </div>
+    <form class = "submission" action="submission.php" method="get" target="_blank">
+        <div class = "row">
+            <div class = "column">
+            </div>
+        </div>
+        <h1 id = "submit-header"> Fill your details here</h1>
+        <h3 id ="submit-header2"> If you have any questions about a product, services or you need to contact us for help you please fill this form below</h3>
+        <fieldset class="contact">
+            <div class="input-group">
+                <label for="customer_name">Name: </label>
+                 <input id="customer_name" required>
+                 </div>
+                 <br>
+                 <br>
+                 <div class="input-group">
+                    <label for="email_address">Email: </label>
+                    <input type="email" id="email_address" required>
+                  </div>
+                  <br>
+                  <br>
+                  <div class ="input-group">
+            <label id="celular">Enter a phone number so we can contact you directly! </label>
+            <input type="tel" id="phone" name="phone" autocomplete="off" 
+            placeholder="123-4567" pattern="[0-9]{3}-[0-9]{4}" required>
+                  </div>
+            <br><br>
+            <div class="input-group">
+                <label for="subject">Subject: </label>
+                 <input id="subject of inquiry" required>
+                </div>
+<br><br>
+<div class ="input-group">
+<label> Category of inquiry</label>
+<select name="category">
+    <option value="Service">Service with a product</option>
+    <option value="Product question">Product question</option>
+    <option value="Product support">Product support</option>
+    <option value="General Question">General Questions</option>
+    <option value="Feedback">Feedback</option>
+</div>
+</select>
+<br><br>
+<br>
+<br>
+<div class ="input-group">
+    <label> Enter your message here:</label>
+            <textarea rows="4" cols="90" name="additional-information" placeholder="If you have any comments for the pizza, please enter them here.">
+            </textarea>
+            <br>
+            <br>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+    <footer id="footer1">
+    
+    </footer>
+
+    <script src="JS/headerandfooter.js"></script>
+</body>
+</html>
