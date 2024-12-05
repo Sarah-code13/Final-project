@@ -1,0 +1,9 @@
+Team members
+
+Nicoll Ramirez Rativa: did the home and product page along with the respective css for the home and product page 
+
+Sarah Perdomo: Did the about us and contact us page along with the respective css for the about us and contact us page
+
+the two members Nicoll and Sarah worked with the header footer javascript file 
+
+Member of the group Phu D. Dinh - 200621789 haven't reach out to us, we tried to contact them by email but haven't received a replay back so only the two of us did the website together

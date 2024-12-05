@@ -1,0 +1,300 @@
+/*body{
+    margin: 0;
+    padding: 0;
+    background-color: #eef0f4;
+    color: #911c1c;
+    height: 100vh;
+    display: flex;
+    
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}*/
+@font-face {
+  font-family: "Doto";
+  src: url(../Fonts/Doto-VariableFont_ROND\,wght.ttf);
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(../Fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Playwrite BE WAL";
+  src: url(../Fonts/PlaywriteBEWAL-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Playwrite AT";
+  src: url(../Fonts/PlaywriteAT-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Titillium Web";
+  src: url(../Fonts/TitilliumWeb-Bold.ttf);
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../Fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Protest Revolution";
+  src: url(../Fonts/ProtestRevolution-Regular.ttf);
+}
+@font-face {
+  font-family: "Playwrite CO";
+  src: url(../Fonts/PlaywriteCO-VariableFont_wght.ttf); /*giving fonts to the css file */
+}
+*{
+  
+    transition: all .6s linear;
+font-family: "Titillium Web";
+font-weight: 700;
+font-size: medium;
+    
+  }
+
+body {
+    display: block;
+    flex-direction: column;
+    margin: 0; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+main {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+header nav { /*making the header as a flex box, being sticky with some opacity a border radius and a border*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: transparent;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    border: none;
+    border-bottom: 2px solid #ffe4d0;
+    border-radius: 20%;
+    position: sticky;
+    padding: 10px 20px;
+    top: 0;
+    z-index: 1000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+   
+    color: white;
+}
+
+nav img {
+    max-height: 90px;
+    margin-right: 20px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;    /*correct size for all images inside the header */
+    cursor: pointer;
+}
+nav img:hover {
+    transform: scale(1.1); /*when the images are hovered it increases it size */
+}
+
+nav ul {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex: 1;
+    gap: 15px; /*making the list as a flex */
+
+}
+nav ul.active{
+    display: flex;
+}
+nav ul li {
+    list-style-type: none; /*disable the bullet points */
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff; 
+    padding: 8px 12px; 
+    border-radius: 25px; 
+    transition: all 06s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+nav ul li a:hover { 
+    background: linear-gradient(to right, #eaff5f, #2fbea7);
+    color: #ff4500; 
+    transform: translateY(-5px);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3); /* the lines are hovered it changes its background color and color of font */
+    
+}
+
+nav ul li a.active { 
+    font-weight: 800; 
+    color: white; 
+    transform: scale(1.05);
+    /* background-color: #4b2e2e; */
+    background: linear-gradient(to right, #eaff5f, #2fbea7); /* when a li its active it stays with a color background */
+}
+
+.custom-footer {
+    background: linear-gradient(to right, #15397a, #9ec1fe); /*making a footer */
+    color: white;
+    padding: 20px 10%;
+    font-family: "Playfair Display";
+    text-align: center;
+  }
+  
+  .footer-container { /*making the footer as a flexbox */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-intro { /*making the intro as a flexbox too for better display */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+  }
+  
+  .footer-logo {
+    max-width: 150px; 
+  width: auto;
+  height: auto;
+  transition: transform 0.3s ease; /*giving transition to the logo inside the footer */
+  }
+  .footer-logo:hover {
+    transform: scale(1.2);
+    cursor: pointer; /*when the logo is hovered it increases its size and the cursos it changes to a pointer */
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    
+  }
+  
+  .footer-nav a:hover {
+    text-decoration: underline;
+    background: linear-gradient(to right, #636bcf, #2fbea7);
+    color: #ff4500; 
+    transform: translateY(-5px);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3); /* when one of the items its hovered it changes the background color while making the color red with underline */
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /*making the social logos as a flexbox */
+  }
+  
+  .footer-social a {
+    display: inline-block;
+  }
+  
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s ease; /*giving transition to the logos */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-copyright p {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8; 
+  }
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease; /*making the hamburger menu */
+}
+.menu-icon.active {
+  transform: rotate(90deg); /*giving a transition to the hamburger icon */
+}
+@media only screen and (max-width: 768px) { /*making the header and the footer compatible to mobile screens */
+    
+nav ul{
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #5f74f7, #533737);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+nav ul li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav ul.active {
+    display: flex;
+}
+.menu-icon {
+    display: block;
+    transition: transform 0.3s ease;
+}
+.menu-icon.active {
+  transform: rotate(90deg);
+}
+nav img {
+        max-height: 50px;
+    }
+nav ul li a { 
+        font-size: .9rem;
+        transition: background-color 2s, color 0.3s;
+    }
+
+    main h1 {
+        font-size: 1.3rem;
+    }
+
+    main h2 {
+        font-size: 1rem;
+    }
+
+    
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 06s 06s ease-out,  06s ease-out;
+  }
+  
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+   
