@@ -6,7 +6,7 @@ const myHeader = `
         <a href="index.html"><img src="Imagenes/logowithbackground.png" alt="site logo"></a>
         <span class="menu-icon" onclick="toggleMenu()">☰</span> 
         <ul>
-            <li><a href="homepage.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="aboutus.html">About us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Address:</strong> 123 Business Lane, City, State, 45678</p>
         </div>
         <div class="footer-nav">
-          <a href="homepage.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="products.html">Products</a>
           <a href="aboutus.html">About Us</a>
           <a href="Contact.html">Contact Us</a>
