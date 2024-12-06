@@ -9,7 +9,7 @@ const myHeader = `
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="aboutus.html">About us</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
             <img src="Imagenes/shoppingcart.png">
         </ul>
     <nav>`; //making the header with hamburger icon in  javascript
